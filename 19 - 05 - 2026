@@ -1,0 +1,45 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, r
+    escreva("Digite o primeiro número: ")
+    leia(n1)
+
+    escreva("Digite o segundo número: ")
+    leia(n2)
+
+    escreva("Qual a operação desejada? ")
+    escreva("1 adição - ")
+    escreva("2 subtração - ")
+    escreva("3 multiplicação - ")
+    escreva("4 divisão: ")
+    
+    leia(r)
+
+    se (r == 1)
+    {escreva("A soma dos dois números equivale a: ", n1 + n2)}
+
+    senao se (r == 2)
+    {escreva("A subtração dos dois números equivale a: ", n1 - n2)}
+
+    senao se (r == 3)
+    {escreva("A multiplicação dos dois números equivale a: ", n1 * n2)}
+
+    senao se (r == 4) {
+
+      se (n2 == 0) {
+      escreva("Não se pode dividir por zero.")}
+      
+
+      senao {
+      escreva("A divisão dos dois números equivale a: ", n1 / n2)}}
+
+    senao
+    {escreva("Opção inválida.")}
+
+  
+
+    
+
+    
+  }
+}
